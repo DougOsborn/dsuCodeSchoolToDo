@@ -15,16 +15,17 @@ HomePage = require("./components/homePage");
 var AboutPage;
 AboutPage = require("./components/about/about");
 
-var routes;
-routes = (
+var App = require('./components/App');
+var TodoPage = require('./components/todos/TodoPage');
+
+var routes = (
 	<Route path="/" component={App}>
-
-		<IndexRoute component={HomePage}/>
-
-		<Route path="/about" component={AboutPage}/>
-
-	</route>
-
+		<IndexRoute component={HomePage} />
+		<Route path="/about" component={AboutPage} />
+		<Route path="/todos" component={TodoPage} />
+	</Route>
 );
 
-module.exports : routes
+
+module.exports = routes;
+
