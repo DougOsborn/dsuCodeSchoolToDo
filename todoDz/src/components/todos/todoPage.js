@@ -1,29 +1,16 @@
-"use strict";
+'use strict';
 
-var React;
-React = require("react");
+var React = require('react');
 
-var TodoPage;
-TodoPage = React.createClass({
 
+var Todos = React.createClass({
     render: function () {
         return (
             <div>
-                <h1>Cool Stuff We Are Learning </h1>
-                <p> We are going to be using these technologies </p>
-
-                <ul>
-                    <li>Gulp</li>
-                    <li>React</li>
-                    <li>React-Router</li>
-                    <li>Node</li>
-                    <li>Browserify</li>
-                </ul>
-
+                <h2>Things we need todo</h2>
             </div>
-
         );
     }
 });
 
-module.exports = TodoPage;
+module.exports = Todos;
