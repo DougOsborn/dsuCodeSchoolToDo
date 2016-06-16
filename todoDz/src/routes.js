@@ -4,7 +4,7 @@ var React;
 React = require("react");
 
 var Route;
-Route = require(" react-router").Route;
+Route = require("react-router").Route;
 
 var IndexRoute;
 IndexRoute = require("react-router").IndexRoute;
@@ -19,7 +19,7 @@ var App;
 App = require('./components/app');
 
 var TodoPage;
-TodoPage = require('./components/todos/TodoPage');
+TodoPage = require('./components/todos/todoPage');
 
 var routes = (
 	<Route path="/" component={App}>
