@@ -26,4 +26,4 @@ AboutPage = React.createClass({
 	}
 });
 
-module.exports = AboutPage
+module.exports = AboutPage;
