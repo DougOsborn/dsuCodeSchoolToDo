@@ -1,27 +1,26 @@
-"use strict";
+'use strict';
 
 var React;
-React = require("react");
+React = require('react');
+
 
 var AboutPage;
 AboutPage = React.createClass({
-
 	render: function () {
 		return (
 			<div>
-				<h1>Cool Stuff We Are Learning </h1>
-				<p> We are going to be using these technologies </p>
-
+				<h1>Cool Stuff We Are Learning</h1>
+				<p>We are going to do things with these technologies.</p>
 				<ul>
 					<li>Gulp</li>
 					<li>React</li>
-					<li>React-Router</li>
+					<li>React Router</li>
 					<li>Node</li>
 					<li>Browserify</li>
+					<li>Bootstrap</li>
+					<li>Flux</li>
 				</ul>
-
 			</div>
-
 		);
 	}
 });
