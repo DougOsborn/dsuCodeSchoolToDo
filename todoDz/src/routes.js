@@ -16,7 +16,7 @@ var AboutPage;
 AboutPage = require("./components/about/about");
 
 var App;
-App = require('./components/App');
+App = require('./components/app');
 
 var TodoPage;
 TodoPage = require('./components/todos/TodoPage');
