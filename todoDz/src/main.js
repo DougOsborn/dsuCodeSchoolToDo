@@ -1,7 +1,5 @@
 "use strict";
 
-var $;
-
 var jQuery;
 jQuery = require("jquery");
 
