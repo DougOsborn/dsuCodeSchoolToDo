@@ -1,27 +1,28 @@
 'use strict';
 
 var React;
-React = require("react");
+React = require('react');
+
+var Link;
+Link = require('react-router').Link;
+
 
 var Header;
 Header = React.createClass({
-	render: function () {
-		return (
-			<div className="navbar navbar-default">
-				<div className="container-fluid">
-					<a href="/" className="navbar-brand">Todo App</a>
-					<ul className="nav navbar-nav">
-
-						<li><a href="/">Home</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="/todos">Todos</a></li>
-					</ul>
-				</div>
-			</div>
-
-		);
-
-	}
+    render: function () {
+        return (
+            <div className="navbar navbar-default">
+                <div className="container-fluid">
+                    <Link to="/" className="navbar-brand">Todo App</Link>
+                    <ul className="nav navbar-nav">
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/todos">Todos</Link></li>
+                    </ul>
+                </div>
+            </div>
+        );
+    }
 });
 
 module.exports = Header;
