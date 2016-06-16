@@ -1,20 +1,25 @@
 "use strict";
 
-var React = require("react");
+var React;
+React = require("react");
 
-var Header = require("./common/header")
+var Header;
+Header = require("./common/header");
 
-var App = React.createClass({
+var App;
+App = React.createClass({
 
-	render: function ()
-	{
+	render: function () {
 
-		return(
+		return (
 
 			<Header/>
-			{this.props.children}
+		{
+			this.props.children
+		}
 
 
-		);
+		)
+		;
 	}
 });
