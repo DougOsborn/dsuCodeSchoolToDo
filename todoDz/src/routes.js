@@ -1,24 +1,30 @@
-"use strict";
+`use strict`;
 
-var React = require("react");
+var React;
+React = require("react");
 
-var Route = require(" react-router").Route;
+var Route;
+Route = require(" react-router").Route;
 
-var IndexRoute = require("react-router").IndexRoute;
+var IndexRoute;
+IndexRoute = require("react-router").IndexRoute;
 
-var HomePage = require("./components/homePage");
+var HomePage;
+HomePage = require("./components/homePage");
 
-var AboutPage = require("./components/about/about");
+var AboutPage;
+AboutPage = require("./components/about/about");
 
-var routes = (
-	<Route   path= "/" component={App} >
+var routes;
+routes = (
+	<Route path="/" component={App}>
 
-		<IndexRoute component={HomePage} />
+		<IndexRoute component={HomePage}/>
 
-		<Route path="/about" component= {AboutPage} />
+		<Route path="/about" component={AboutPage}/>
 
 	</route>
 
-	);
+);
 
 module.exports : routes
