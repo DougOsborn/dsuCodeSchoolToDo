@@ -4,7 +4,7 @@ var React;
 React = require('react');
 
 var Header;
-Header = require('./common/Header');
+Header = require('./common/header');
 
 
 var App = React.createClass({
