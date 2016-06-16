@@ -15,8 +15,11 @@ HomePage = require("./components/homePage");
 var AboutPage;
 AboutPage = require("./components/about/about");
 
-var App = require('./components/App');
-var TodoPage = require('./components/todos/TodoPage');
+var App;
+App = require('./components/App');
+
+var TodoPage;
+TodoPage = require('./components/todos/TodoPage');
 
 var routes = (
 	<Route path="/" component={App}>
