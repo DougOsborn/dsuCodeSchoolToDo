@@ -19,7 +19,7 @@ var AboutPage;
 AboutPage = require("./components/about/about");
 
 var TodoPage;
-TodoPage = require(".components/todos/todoPage");
+TodoPage = require("./components/todos/todoPage");
 
 var App;
 App = React.createClass({
