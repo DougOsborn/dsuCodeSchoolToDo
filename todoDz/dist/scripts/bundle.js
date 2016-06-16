@@ -29509,21 +29509,54 @@ module.exports = require('./lib/React');
 },{"./lib/React":30}],169:[function(require,module,exports){
 "use strict";
 
-var React = require("react");
+var React;
+React = require("react");
 
-var Header = React.createClass({displayName: "Header",
-	render : function () {
-		return(
+var AboutPage;
+AboutPage = React.createClass({displayName: "AboutPage",
+
+	render: function () {
+		return (
+			React.createElement("div", null, 
+				React.createElement("h1", null, "Cool Stuff We Are Learning "), 
+				React.createElement("p", null, " We are going to be using these technologies "), 
+
+				React.createElement("ul", null, 
+					React.createElement("li", null, "Gulp"), 
+					React.createElement("li", null, "React"), 
+					React.createElement("li", null, "React-Router"), 
+					React.createElement("li", null, "Node"), 
+					React.createElement("li", null, "Browserify")
+				)
+
+			)
+
+		);
+	}
+});
+
+module.exports = AboutPage;
+
+},{"react":168}],170:[function(require,module,exports){
+'use strict';
+
+var React;
+React = require("react");
+
+var Header;
+Header = React.createClass({displayName: "Header",
+	render: function () {
+		return (
 			React.createElement("div", {className: "navbar navbar-default"}, 
-			React.createElement("div", {className: "container-fluid"}, 
-			React.createElement("a", {href: "/", className: "navbar-brand"}, "Todo App"), 
-			React.createElement("ul", {className: "nav navbar-nav"}, 
+				React.createElement("div", {className: "container-fluid"}, 
+					React.createElement("a", {href: "/", className: "navbar-brand"}, "Todo App"), 
+					React.createElement("ul", {className: "nav navbar-nav"}, 
 
-				React.createElement("li", null, React.createElement("a", {href: "/"}, "Home")), 
-				React.createElement("li", null, React.createElement("a", {href: "/#about"}, "About"))
-
-			)
-			)
+						React.createElement("li", null, React.createElement("a", {href: "/"}, "Home")), 
+						React.createElement("li", null, React.createElement("a", {href: "/about"}, "About")), 
+						React.createElement("li", null, React.createElement("a", {href: "/todos"}, "Todos"))
+					)
+				)
 			)
 
 		);
@@ -29533,18 +29566,20 @@ var Header = React.createClass({displayName: "Header",
 
 module.exports = Header;
 
-},{"react":168}],170:[function(require,module,exports){
-"use strict";
+},{"react":168}],171:[function(require,module,exports){
+'use strict';
 
-var React = require("react");
+var React;
+React = require("react");
 
-var Home = React.createClass({displayName: "Home",
+var Home;
+Home = React.createClass({displayName: "Home",
 	render: function () {
-		return(
+		return (
 			React.createElement("div", {className: "jumbotron"}, 
 				React.createElement("h1", null, " Code School React app "), 
 
-				React.createElement("p", null, "  This is from the Home Page js file ")
+				React.createElement("p", null, " This is from the Home Page js file ")
 			)
 		);
 	}
@@ -29552,35 +29587,78 @@ var Home = React.createClass({displayName: "Home",
 
 module.exports = Home;
 
-},{"react":168}],171:[function(require,module,exports){
+},{"react":168}],172:[function(require,module,exports){
 "use strict";
 
-var $, jQuery;
+var React;
+React = require("react");
 
-var jQuery = require("jquery");
+var TodoPage;
+TodoPage = React.createClass({displayName: "TodoPage",
 
-var React = require("react");
+    render: function () {
+        return (
+            React.createElement("div", null, 
+                React.createElement("h1", null, "Cool Stuff We Are Learning "), 
+                React.createElement("p", null, " We are going to be using these technologies "), 
 
-var ReactDOM = require("react-dom");
+                React.createElement("ul", null, 
+                    React.createElement("li", null, "Gulp"), 
+                    React.createElement("li", null, "React"), 
+                    React.createElement("li", null, "React-Router"), 
+                    React.createElement("li", null, "Node"), 
+                    React.createElement("li", null, "Browserify")
+                )
 
-var HomePage = require("./components/homePage");
+            )
 
-var Header = require("./components/common/header");
+        );
+    }
+});
 
-var App = React.createClass({displayName: "App",
+module.exports = TodoPage;
 
-	render: function() {
-		return(
-			React.createElement("div", null, 
-				React.createElement(Header, null), 
-				React.createElement(HomePage, null)
-			)
-		);
-	}
+},{"react":168}],173:[function(require,module,exports){
+"use strict";
+
+var JQuery;
+JQuery = require("jquery");
+
+var React;
+React = require("react");
+
+var ReactDOM;
+ReactDOM = require("react-dom");
+
+var HomePage;
+HomePage = require("./components/homePage");
+
+var Header;
+Header = require("./components/common/header");
+
+var AboutPage;
+AboutPage = require("./components/about/about");
+
+var TodoPage;
+TodoPage = require("./components/todos/todoPage");
+
+var App;
+App = React.createClass({displayName: "App",
+
+    render: function () {
+        return (
+            React.createElement("div", null, 
+                React.createElement(Header, null), 
+                React.createElement(HomePage, null), 
+                React.createElement(AboutPage, null), 
+                React.createElement(TodoPage, null)
+            )
+        );
+    }
 
 });
 
 
 ReactDOM.render(React.createElement(App, null), document.getElementById("app"));
 
-},{"./components/common/header":169,"./components/homePage":170,"jquery":1,"react":168,"react-dom":4}]},{},[171]);
+},{"./components/about/about":169,"./components/common/header":170,"./components/homePage":171,"./components/todos/todoPage":172,"jquery":1,"react":168,"react-dom":4}]},{},[173]);

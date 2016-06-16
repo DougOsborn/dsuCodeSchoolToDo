@@ -1,27 +1,41 @@
 'use strict';
 
-var gulp = require('gulp');
-var connect = require('gulp-connect'); // Run our local sever (dev)
-var open = require('gulp-open'); // Open our default browser
-var browserify = require('browserify'); // Bundle JS and lets us use the Common js pattern in the frontend
-var reactify = require('reactify'); // Transpile our JSX to JS
-var source = require('vinyl-source-stream'); // Use conventional text stream with gulp
-var concat = require('gulp-concat'); // Concatenate our files
+var gulp;
+gulp = require('gulp');
 
-var config = {
-	port: 9005,
-	devBaseUrl: 'http://localhost',
-	paths: {
-		html: './src/*.html',
-		js: './src/**/*.js',
-		mainJs: './src/main.js',
-		images: './src/images/*',
-		css: [
-			'node_modules/bootstrap/dist/css/bootstrap.min.css',
-			'node_modules/bootstrap/dist/css/bootstrap-theme.min.css'
-		],
-		dist: './dist'
-	}
+var connect;
+connect = require('gulp-connect'); // Run our local sever (dev)
+
+var open;
+open = require('gulp-open'); // Open our default browser
+
+var browserify;
+browserify = require('browserify'); // Bundle JS and lets us use the Common js pattern in the frontend
+
+var reactify;
+reactify = require('reactify'); // Transpile our JSX to JS
+
+var source;
+source = require('vinyl-source-stream'); // Use conventional text stream with gulp
+
+var concat;
+concat = require('gulp-concat'); // Concatenate our files
+
+var config;
+config = {
+    port: 9005,
+    devBaseUrl: 'http://localhost',
+    paths: {
+        html: './src/*.html',
+        js: './src/**/*.js',
+        mainJs: './src/main.js',
+        images: './src/images/*',
+        css: [
+            'node_modules/bootstrap/dist/css/bootstrap.min.css',
+            'node_modules/bootstrap/dist/css/bootstrap-theme.min.css'
+        ],
+        dist: './dist'
+    }
 };
 
 // Setup for our dev server

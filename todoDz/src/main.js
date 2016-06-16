@@ -1,7 +1,7 @@
 "use strict";
 
-var jQuery;
-jQuery = require("jquery");
+var JQuery;
+JQuery = require("jquery");
 
 var React;
 React = require("react");
