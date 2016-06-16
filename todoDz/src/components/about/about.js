@@ -1,13 +1,15 @@
 "use strict";
 
-var React = require("react");
+var React;
+React = require("react");
 
-var AboutPage = React.createClass({
+var AboutPage;
+AboutPage = React.createClass({
 
-	render: function() {
-		return(
+	render: function () {
+		return (
 			<div>
-				<h1>Cool Stuff  We Are  Learning </h1>
+				<h1>Cool Stuff We Are Learning </h1>
 				<p> We are going to be using these technologies </p>
 
 				<ul>
@@ -15,7 +17,7 @@ var AboutPage = React.createClass({
 					<li>React</li>
 					<li>React-Router</li>
 					<li>Node</li>
-					<li>Browserify</li>										
+					<li>Browserify</li>
 				</ul>
 
 			</div>
@@ -24,4 +26,4 @@ var AboutPage = React.createClass({
 	}
 });
 
-module.exports : AboutPage
+module.exports = AboutPage
